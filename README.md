@@ -1,72 +1,66 @@
 # Acowale News 🗞️
 
-Welcome to Acowale News! 🚀 This is a dynamic news app powered by the gnews.io API, featuring a responsive frontend, a robust backend, and hosted on Firebase. Dive into the latest headlines and enjoy a smooth, engaging user experience on any device.
+Welcome to Acowale News! 🚀 This is a dynamic news app that fetches the latest headlines from the gnews.io API, featuring a responsive frontend hosted on Vercel. Enjoy reading the latest news with a sleek and user-friendly interface.
 
 ## 📋 Table of Contents
 
 - [Getting Started](#getting-started)
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Firebase Deployment](#firebase-deployment)
+- [Frontend – Make it Shine ✨](#frontend--make-it-shine-)
+- [Vercel Deployment](#vercel-deployment)
 - [How to Contribute](#how-to-contribute)
 - [Contact](#contact)
 
 ## Getting Started 🕵️‍♂️
 
-1. **API Key**: Head over to [gnews.io](https://gnews.io/) and obtain your API key. Without it, you won't be able to fetch news!
+1. **API Key**: Head over to [gnews.io](https://gnews.io/) and obtain your API key. You'll need it to fetch news articles.
 
-2. **Clone the Repository**: 
+2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/AbhisekhNayek/AcowaleNews.git
+   git clone https://github.com/AbhisekhNayek/AcoNews.git
    ```
 
-3. **Install Dependencies**: Navigate to both the `Frontend` and `Backend` folders and install the necessary dependencies.
+3. **Install Dependencies**: 
    ```bash
-   cd AcowaleNews/Frontend
+   cd AcoNews
    npm install
-   cd ../Backend
-   npm install
+   ```
+
+4. **Set Up Environment Variables**:
+   - Create a `.env` file in the root of the project and add your API key:
+     ```
+     REACT_APP_GNEWS_API_KEY=your_api_key_here
+     ```
+
+5. **Start the Development Server**: 
+   ```bash
+   npm start
    ```
 
 ## Frontend – Make it Shine ✨
 
-- **UI Design**: Developed with a sleek and user-friendly interface to ensure a delightful reading experience. The design is responsive, making sure it looks great on mobile, tablet, and desktop devices.
+- **UI Design**: Designed with a sleek, user-friendly interface to ensure a delightful reading experience. The design is responsive, ensuring it looks great on mobile, tablet, and desktop devices.
 - **Components**: Includes Header, Footer, NewsCard, and Pagination components.
 - **Styling**: Utilizes Tailwind CSS for a modern and polished look.
 
-## Backend – Power it Up 🚀
+## Vercel Deployment 🏡
 
-- **API Integration**: Fetches news articles from the gnews.io API.
-- **Features**: Handles pagination, search functionality, and serves news articles to the frontend.
-- **Setup**: 
-  - Configure environment variables in `.env`.
-  - Start the server using:
-    ```bash
-    cd Backend
-    npm start
-    ```
-
-## Firebase Deployment 🏡
-
-- **Hosting**: Deployed on Firebase’s Free Tier.
-- **Setup**: Follow the Firebase hosting setup guide and deploy your app:
-  ```bash
-  cd Frontend
-  firebase deploy
-  ```
+- **Live Demo**: [View Live Demo](https://aco-news-flax.vercel.app/)
+- **Deployment**: Deployed on Vercel’s Free Tier. For deploying your own version:
+  - Push your code to GitHub.
+  - Connect your GitHub repository to Vercel and follow the deployment steps.
 
 ## How to Contribute 🤝
 
 1. **Fork the Repo**: Click the "Fork" button at the top right of the repository page.
-2. **Create a Feature Branch**: 
+2. **Create a Feature Branch**:
    ```bash
    git checkout -b feature/your-feature-name
    ```
-3. **Commit Changes**: 
+3. **Commit Changes**:
    ```bash
    git commit -am 'Add some feature'
    ```
-4. **Push to Branch**: 
+4. **Push to Branch**:
    ```bash
    git push origin feature/your-feature-name
    ```
@@ -82,8 +76,7 @@ For any questions or feedback, feel free to reach out:
 
 - [ ] API Key from gnews.io
 - [ ] A frontend that’s slick, responsive, and screams Acowalian
-- [ ] A backend that powers news into the app like a seasoned journalist
-- [ ] Hosted on Firebase
+- [ ] Hosted on Vercel
 - [ ] GitHub repo link
 - [ ] A summary of your experience
 
